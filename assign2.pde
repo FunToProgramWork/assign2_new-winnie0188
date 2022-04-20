@@ -8,7 +8,8 @@ PImage groundhogLeftImg;
 PImage groundhogRightImg; 
 PImage cabbageImg; 
 int x = 0;
-
+int x1 = 240;
+int y1 = 80;
 void setup() {
   size(640, 480, P2D);
   bgImg = loadImage("img/bg.jpg");
@@ -27,13 +28,13 @@ void draw() {
   image(soilImg,0, 160);
   image(lifeImg,10, 10);
   image(lifeImg,80,10);
-  image(soldierImg, 0, 400);
-  image(cabbageImg,0,240);
+  image(soldierImg, x, 400);
+  image(cabbageImg,640,240);
    
   stroke(124, 204, 25);
   line(0, 160, 640, 160);
   strokeWeight(15);
-  image(groundhogIdleImg,240,80);
+  image(groundhogIdleImg,x1,y1);
   
   
   fill(255, 255, 0);
@@ -57,16 +58,16 @@ void draw() {
 void keyPressed(){
   if (key == CODED) {
     if (keyCode == UP) {
-          
+      x1 = x1 + 80;    
     } 
     else if (keyCode == DOWN) {
-      
+      x1 = x1 - 80;  
     } 
     else if (keyCode == RIGHT) {
-      
+      y1 = y1 + 80;  
     } 
     else if (keyCode == LEFT) {
-      
+       y1 = y1 - 80; 
     } 
   } 
   
