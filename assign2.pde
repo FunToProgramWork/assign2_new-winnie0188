@@ -55,16 +55,16 @@ void draw() {
   }
   if (keyPressed) {
     if (keyCode == UP) {
-      y1 = y1 - 5;   
+      y1 = y1 - 10;   
     } 
     else if (keyCode == DOWN) {
-      y1 = y1 + 5; 
+      y1 = y1 + 10; 
     } 
     else if (keyCode == RIGHT) {
-      x1 = x1 + 5;  
+      x1 = x1 + 10;  
     } 
     else if (keyCode == LEFT) {
-       x1 = x1 - 5; 
+       x1 = x1 - 10; 
     } 
   }  
     if(x1 < 0){
