@@ -83,10 +83,10 @@ void draw() {
 
 void keyPressed(){
   if (key == CODED) {
-    if (keyCode == UP) {
+    if (key == 'w') {
       x1 = x1 + 80;    
     } 
-    else if (keyCode == DOWN) {
+    else if (keyCode == 's') {
       x1 = x1 - 80;  
     } 
     else if (keyCode == RIGHT) {
