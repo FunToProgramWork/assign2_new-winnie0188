@@ -3,6 +3,9 @@ PImage soilImg;
 PImage lifeImg; 
 PImage soldierImg; 
 PImage groundhogIdleImg; 
+PImage groundhogDownImg; 
+PImage groundhogLeftImg; 
+PImage groundhogRightImg; 
 PImage cabbageImg; 
 int x = 0;
 
@@ -13,6 +16,9 @@ void setup() {
   lifeImg = loadImage("img/life.png");
   soldierImg = loadImage("img/soldier.png");
   groundhogIdleImg = loadImage("img/groundhogIdle.png");
+  groundhogDownImg = loadImage("img/groundhogDown.png");
+  groundhogLeftImg = loadImage("img/groundhogLeft.png");
+  groundhogRightImg = loadImage("img/groundhogRight.png");
   cabbageImg = loadImage("img/cabbage.png");
 }
 
@@ -44,9 +50,26 @@ void draw() {
   
   if ( x > 640)
     x = -80;
+  
+}
 
 void keyPressed(){
+  if (key == CODED) {
+    if (keyCode == UP) {
+          
+    } 
+    else if (keyCode == DOWN) {
+      
+    } 
+    else if (keyCode == RIGHT) {
+      
+    } 
+    else if (keyCode == LEFT) {
+      
+    } 
+  } 
+  
 }
-////////
+
 void keyReleased(){
 }
