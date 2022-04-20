@@ -1,8 +1,3 @@
-PImage bgImg; 
-PImage soilImg; 
-PImage lifeImg; 
-PImage soldierImg; 
-PImage groundhogIdleImg; 
 PImage groundhogDownImg; 
 PImage groundhogLeftImg; 
 PImage groundhogRightImg; 
@@ -50,13 +45,10 @@ void draw() {
   stroke(255,0,0);
   
   x = x+2;
-  if ( x > 640)
+  if ( x > 640){
     x = -80;
-  
-}
-
-void keyPressed(){
-  if (key == CODED) {
+  }
+  if (keyPressed) {
     if (keyCode == UP) {
       x1 = x1 + 80;    
     } 
@@ -69,7 +61,25 @@ void keyPressed(){
     else if (keyCode == LEFT) {
        y1 = y1 - 80; 
     } 
-  } 
+  }   
+  
+}
+
+void keyPressed(){
+  //if (key == CODED) {
+  //  if (keyCode == UP) {
+  //    x1 = x1 + 80;    
+  //  } 
+  //  else if (keyCode == DOWN) {
+  //    x1 = x1 - 80;  
+  //  } 
+  //  else if (keyCode == RIGHT) {
+  //    y1 = y1 + 80;  
+  //  } 
+  //  else if (keyCode == LEFT) {
+  //     y1 = y1 - 80; 
+  //  } 
+  //} 
   
 }
 
