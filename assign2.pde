@@ -28,6 +28,7 @@ void draw() {
   image(lifeImg,10, 10);
   image(lifeImg,80,10);
   image(soldierImg, 0, 400);
+  image(cabbageImg,640,240);
    
   stroke(124, 204, 25);
   line(0, 160, 640, 160);
@@ -47,7 +48,7 @@ void draw() {
   strokeCap(ROUND);
   stroke(255,0,0);
   
-  
+  x = x+2;
   if ( x > 640)
     x = -80;
   
