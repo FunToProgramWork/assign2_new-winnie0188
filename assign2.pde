@@ -56,13 +56,13 @@ void draw() {
   if (keyPressed) {
     if (keyCode == UP) {
       y1 = y1 - 16;   
-      groundhogDownImg = groundhogIdleImg
+      groundhogDownImg = groundhogIdleImg;
       groundhogLeftImg = groundhogIdleImg;
       groundhogRightImg = groundhogIdleImg;
     } 
     else if (keyCode == DOWN) {
       y1 = y1 + 16; 
-      groundhogIdleImg=groundhogDownImg
+      groundhogIdleImg=groundhogDownImg;
       groundhogDownImg = groundhogRightImg=groundhogDownImg;
       groundhogLeftImg=groundhogDownImg;
     } 
