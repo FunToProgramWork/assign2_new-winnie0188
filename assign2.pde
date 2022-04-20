@@ -59,15 +59,18 @@ void draw() {
     } 
     else if (keyCode == DOWN) {
       y1 = y1 + 16; 
+      groundhogDownImg = groundhogIdleImg;
     } 
     else if (keyCode == RIGHT) {
       x1 = x1 + 16;  
+      groundhogRightImg = groundhogIdleImg;
     } 
     else if (keyCode == LEFT) {
        x1 = x1 - 16; 
+       groundhogLeftImg = groundhogIdleImg;
     } 
-  }  
-    if(x1 < 0){
+  } 
+  if(x1 < 0){
     x1 = 0;
   }
   else if(x1 > 560){
