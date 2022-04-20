@@ -56,27 +56,27 @@ void draw() {
   if (keyPressed) {
     if (keyCode == UP) {
       y1 = y1 - 16;   
-      groundhogIdleImg = groundhogDownImg;
-      groundhogIdleImg = groundhogLeftImg;
-      groundhogIdleImg = groundhogRightImg;
+      groundhogDownImg = groundhogIdleImg
+      groundhogLeftImg = groundhogIdleImg;
+      groundhogRightImg = groundhogIdleImg;
     } 
     else if (keyCode == DOWN) {
       y1 = y1 + 16; 
-      groundhogDownImg = groundhogIdleImg;
-      groundhogDownImg = groundhogRightImg;
-      groundhogDownImg = groundhogLeftImg;
+      groundhogIdleImg=groundhogDownImg
+      groundhogDownImg = groundhogRightImg=groundhogDownImg;
+      groundhogLeftImg=groundhogDownImg;
     } 
     else if (keyCode == RIGHT) {
       x1 = x1 + 16;  
-      groundhogRightImg = groundhogIdleImg;
-      groundhogRightImg = groundhogLeftImg;
-      groundhogRightImg = groundhogDownImg;
+      groundhogIdleImg=groundhogRightImg = ;
+      groundhogLeftImg=groundhogRightImg = ;
+      groundhogDownImg=groundhogRightImg = ;
     } 
     else if (keyCode == LEFT) {
        x1 = x1 - 16; 
-       groundhogLeftImg = groundhogIdleImg;
-       groundhogLeftImg = groundhogRightImg;
-       groundhogLeftImg = groundhogDownImg;
+       groundhogIdleImg=groundhogLeftImg;
+       groundhogRightImg=groundhogLeftImg;
+       groundhogDownImg=groundhogLeftImg;
     } 
   } 
   if(x1 < 0){
