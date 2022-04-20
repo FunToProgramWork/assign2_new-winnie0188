@@ -53,17 +53,17 @@ void draw() {
   if ( x > 640){
     x = -80;
   }
-  if (keyPressed) {
-    if (keyCode == UP) {
+    if (keyPressed) {
+    if (key == 'w') {
       x1 = x1 + 80;    
     } 
-    else if (keyCode == DOWN) {
+    else if (key == 's') {
       x1 = x1 - 80;  
     } 
-    else if (keyCode == RIGHT) {
+    else if (key == 'd') {
       y1 = y1 + 80;  
     } 
-    else if (keyCode == LEFT) {
+    else if (key == 'a') {
        y1 = y1 - 80; 
     } 
   } 
@@ -81,26 +81,7 @@ void draw() {
   }
 }
 
-void keyPressed(){
-  if (key == CODED) {
-    if (key == 'w') {
-      x1 = x1 + 80;    
-    } 
-    else if (keyCode == 's') {
-      x1 = x1 - 80;  
-    } 
-    else if (keyCode == RIGHT) {
-      y1 = y1 + 80;  
-    } 
-    else if (keyCode == LEFT) {
-       y1 = y1 - 80; 
-    } 
-  } 
-  
-}
 
-void keyReleased(){
-}
 
 void keyReleased(){
 }
