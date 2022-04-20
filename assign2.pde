@@ -68,9 +68,9 @@ void draw() {
     } 
     else if (keyCode == RIGHT) {
       x1 = x1 + 16;  
-      groundhogIdleImg=groundhogRightImg = ;
-      groundhogLeftImg=groundhogRightImg = ;
-      groundhogDownImg=groundhogRightImg = ;
+      groundhogIdleImg=groundhogRightImg ;
+      groundhogLeftImg=groundhogRightImg ;
+      groundhogDownImg=groundhogRightImg ;
     } 
     else if (keyCode == LEFT) {
        x1 = x1 - 16; 
