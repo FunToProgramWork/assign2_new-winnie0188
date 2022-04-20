@@ -55,16 +55,16 @@ void draw() {
   }
   if (keyPressed) {
     if (key == 'w') {
-      y1 = y1 + 80;   
+      y1 = y1 + 16;   
     } 
     else if (key == 's') {
-      y1 = y1 + 80; 
+      y1 = y1 + 16; 
     } 
     else if (key == 'd') {
-      x1 = x1 + 80;  
+      x1 = x1 + 16;  
     } 
     else if (key == 'a') {
-       x1 = x1 - 80; 
+       x1 = x1 - 16; 
     } 
   } 
   if(y1 < 0){
