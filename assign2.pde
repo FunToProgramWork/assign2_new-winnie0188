@@ -67,16 +67,16 @@ void draw() {
        x1 = x1 - 5; 
     } 
   }  
-  if(x1 < 0){
+    if(x1 < 0){
     x1 = 0;
   }
-  else if(x1 > 640){
+  else if(x1 > 560){
     x1 = 560;
   }
   else if(y1 < 80){
     y1 = 80;
   }
-  else if(y1 > 480){
+  else if(y1 > 400){
     y1 = 400;
   }
 }
