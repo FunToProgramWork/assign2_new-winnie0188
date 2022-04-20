@@ -1,3 +1,8 @@
+PImage bgImg; 
+PImage soilImg; 
+PImage lifeImg; 
+PImage soldierImg; 
+PImage groundhogIdleImg; 
 PImage groundhogDownImg; 
 PImage groundhogLeftImg; 
 PImage groundhogRightImg; 
@@ -61,26 +66,40 @@ void draw() {
     else if (keyCode == LEFT) {
        y1 = y1 - 80; 
     } 
-  }   
-  
+  } 
+  if(x1 < 0){
+    x1 = 0;
+  }
+  else if(x1 > 640){
+    x1 = 640;
+  }
+  else if(y1 < 80){
+    y1 = 80;
+  }
+  else if(y1 > 480){
+    y1 = 480;
+  }
 }
 
 void keyPressed(){
-  //if (key == CODED) {
-  //  if (keyCode == UP) {
-  //    x1 = x1 + 80;    
-  //  } 
-  //  else if (keyCode == DOWN) {
-  //    x1 = x1 - 80;  
-  //  } 
-  //  else if (keyCode == RIGHT) {
-  //    y1 = y1 + 80;  
-  //  } 
-  //  else if (keyCode == LEFT) {
-  //     y1 = y1 - 80; 
-  //  } 
-  //} 
+  if (key == CODED) {
+    if (keyCode == UP) {
+      x1 = x1 + 80;    
+    } 
+    else if (keyCode == DOWN) {
+      x1 = x1 - 80;  
+    } 
+    else if (keyCode == RIGHT) {
+      y1 = y1 + 80;  
+    } 
+    else if (keyCode == LEFT) {
+       y1 = y1 - 80; 
+    } 
+  } 
   
+}
+
+void keyReleased(){
 }
 
 void keyReleased(){
