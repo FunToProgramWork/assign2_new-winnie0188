@@ -53,35 +53,37 @@ void draw() {
   if ( x > 640){
     x = -80;
   }
-    if (keyPressed) {
+  if (keyPressed) {
     if (key == 'w') {
-      x1 = x1 + 80;    
+      y1 = y1 + 80;   
     } 
     else if (key == 's') {
-      x1 = x1 - 80;  
+      y1 = y1 + 80; 
     } 
     else if (key == 'd') {
-      y1 = y1 + 80;  
+      x1 = x1 + 80;  
     } 
     else if (key == 'a') {
-       y1 = y1 - 80; 
+       x1 = x1 - 80; 
     } 
   } 
-  if(x1 < 0){
-    x1 = 0;
+  if(y1 < 0){
+    y1 = 0;
   }
-  else if(x1 > 640){
-    x1 = 640;
+  else if(y1 > 640){
+    y1 = 640;
   }
-  else if(y1 < 80){
-    y1 = 80;
+  else if(x1 < 80){
+    x1 = 80;
   }
-  else if(y1 > 480){
-    y1 = 480;
+  else if(x1 > 480){
+    x1 = 480;
   }
 }
 
+void keyPressed(){
 
+}
 
 void keyReleased(){
 }
