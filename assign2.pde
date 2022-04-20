@@ -29,7 +29,7 @@ void draw() {
   image(lifeImg,10, 10);
   image(lifeImg,80,10);
   image(soldierImg, x, 400);
-  image(cabbageImg,640,240);
+  image(cabbageImg,240,240);
    
   stroke(124, 204, 25);
   line(0, 160, 640, 160);
